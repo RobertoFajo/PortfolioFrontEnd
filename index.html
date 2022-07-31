@@ -13,12 +13,12 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 </head>
 <body>
-    <div class="row">
+     <div class="row">
         <div class="col-sm-5 bg-dark text-white">
             <img src="imagenes/APLogo-20-20.png" width="100">
         </div>
         <div class="col-sm-6 bg-dark text-white">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <div class="container-fluid">
                   <ul class="navbar-nav">
                     <li class="nav-item">
@@ -41,9 +41,10 @@
             </nav>
         </div>
         <div class="col-sm-1 bg-dark text-white ingrese">
-            <button type="button" class="btn btn-primary">Ingrese</button>
+            <button type="button" class="btn btn-primary" id="open_sign">Ingrese</button>
         </div>
-    </div> 
+    </div>
+       
     <div class="container-fluid imagenCabecera" bg-dark text-light>
         <img src="imagenes/cabecera con foto.jpg" width="100%" >
     </div>
@@ -54,17 +55,23 @@
         </div>
     </div> 
     <div  class="container-fluid contacto">
-        <div class="col-sm-12">
+        <div class="row">
+        <div class="col-sm-6">
             <h3 id="contacto" >Contacto</h3>
             <h5>e-mail robertofajo@gmail.com / Cel.: +54-9-11-4960-1111 </h5>
         </div>
+        <div class="col-sm-1">
+            <img name="editContacto" id="editContacto" class="editContacto" src="imagenes/editar.png" width="30%">
+        </div>
     </div> 
+    </div>
     <div  class="container-fluid acerca">
         <div class="col-sm-12">
             <h3 id="acercaDe" >Acerca de</h3>
             <p class="parrafoAcercaDe">Tasador, Corredor y Martillero Publico. Con gran experiencia en programación estructurada. Hoy abriéndose camino en la POO. </p>
         </div>
     </div>
+    
     <div class="container-fluid row experienciaTitulo">
         <div class="col-sm-2 p-3">
             <h3 id="experiencia" >Experiencia</h3>
@@ -166,7 +173,71 @@
         <div class="col-sm-12 bg-dark text-white ">
             <p>Desarrolló Roberto Jorge Fajo para YO PROGRAMO (2022)</p>
         </div>
-    </div> 
-       
+    </div>
+
+    <!--******************************************************************************-->
+    <!--****************************FORMULARIO DE INGRESO*****************************-->
+    <!--******************************************************************************-->
+    <form action="" class="formulario" id="formulario">
+        <!-- Grupo: Usuario -->
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Usuario</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+                <p class="errorRelleno"id="error"> <b>Error:</b> Por favor rellena el usuario correctamente. </p>
+            </div>
+        </div>
+
+        <!-- Grupo: Contraseña -->
+        
+        <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password">
+                <p class="errorRellenoPass"id="errorPass"> <b>Error:</b> Por favor rellena la Contraseña correctamente. </p>
+
+               
+            </div>
+            
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="errorEnvio" id="errorEnv">Usuario o Contraseña Incorrectos</p>
+            <p class="errorEnvio1" id="errorEnv1">Intente nuevamente</p>
+        </div>
+
+        <div class="col-sm-1 bg-dark text-white cerrar" id="cerrar">
+            <button type="button" class="btn btn-secondary" id="cerrar">Cerrar</button>
+        </div>
+    </form>
+    <!--******************************************************************************--> 
+
+     <!--*****************************************************************************-->
+    <!--****************************FORMULARIO EDIT CONTACTO**************************-->
+    <!--******************************************************************************-->
+    <form action="" class="formularioEditContacto" id="formularioEditContacto">
+        <!-- Grupo: Usuario -->
+        <div class="formulario__grupo" id="grupoContacto">
+            <label for="lblContacto" class="lblContacto">Contacto</label>
+            <div class="formContacto">
+                <input type="text" class="formContactoInput" id="formContactoInput">
+                <p class="errorEditContacto"id="errorEditContacto"> <b>Error:</b> Por favor rellena el contacto correctamente. </p>
+            </div>
+        </div>
+
+        
+
+        <div class="formularioContactoBtnEnviar">
+            <button type="submit" class="btnContactoEnviar">Enviar</button>
+        </div>
+
+        <div class="col-sm-1 bg-dark text-white cerrar" id="contactoCerrar">
+            <button type="button" class="btn btn-secondary" id="btnContactoCerrar">Cerrar</button>
+        </div>
+    </form>
+    <!--******************************************************************************-->
+
+    <script src="JS/logica.js"></script>   
 </body>
 </html>

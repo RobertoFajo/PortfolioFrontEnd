@@ -3,7 +3,20 @@
     padding-bottom: 10px;
 }
 
+.btnSubmit{
+    color: grey;
+}
 
+.cerrar {
+    margin-top: 20px;
+    margin-left: 40%;
+
+    
+}
+
+.cerrar:hover {
+	box-shadow: 15px 0px 30px rgb(207, 241, 8);
+}
 
 .contacto{
     margin-top: -8px;
@@ -33,6 +46,26 @@
     padding-bottom: 0px;
 }
 
+.errorEnvio{
+    color: red;
+    display: none;
+}
+
+.errorEnvio1{
+    color: red;
+    display: none;
+}
+
+.errorRelleno{
+    color: gold;
+    display: none;
+}
+
+.errorRellenoPass{
+    color: gold;
+    display: none;
+}
+
 .experiencia{
     margin-right: -10px;
     padding-left: 5px;
@@ -46,6 +79,65 @@
     padding-right: 0px;
     background-color: #F4B084;
     padding-bottom: 0px;
+}
+
+
+
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+
+
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__mensaje-exito{
+    color: gold;
+    display: none;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__grupo-btn-enviar{
+    margin-top: 20px;
 }
 
 .habilidades{
@@ -63,13 +155,17 @@
 }
 
 .ingrese {
-    padding-top: 8px;
+    padding-top: 20px;
 }
 
 .imagenCabecera{
     padding-left: 0px;
     padding-right: 0px;
     background-color: #000000;
+}
+
+#navbar{
+    padding-top: 15px;
 }
 
 .nombre{
@@ -93,5 +189,50 @@
     font-style: italic;
 }
 
+.formulario{
+    background: rgb(0, 0, 0);
+    width: 30%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    display: none;
+
+}
+
+*/***********************************************************************/
+*/*****************************EDICION***********************************/
+*/***********************************************************************/
 
 
+
+.editContacto{
+    padding-top: 50%;
+}
+
+.formularioEditContacto{
+    background: rgb(0, 0, 0);
+    width: 60%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 20%;
+    top: 130%;
+    display: none;
+
+}
+
+.formContactoInput{
+    width: 99%;
+}
